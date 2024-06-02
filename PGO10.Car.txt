@@ -1,0 +1,17 @@
+public class Car extends Vehicle {
+  private double MilesDriven;
+  private double FuelConsumed;
+
+  public Car(String make, String model, int year, double MilesDriven, double FuelConsumed) {
+    super(make, model, year);
+    this.MilesDriven = MilesDriven;
+    this.FuelConsumed = FuelConsumed;
+  }
+
+  public double calculateFuelEfficiency() {
+        if (FuelConsumed == 0) {
+      return 0.0; 
+    }
+    return MilesDriven / FuelConsumed;
+  }
+}

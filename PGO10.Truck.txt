@@ -1,0 +1,19 @@
+public class Truck extends Vehicle {
+  private double MilesDriven;
+  private double FuelConsumed;
+  private double CargoWeight;
+
+  public Truck(String make, String model, int year, double FilesDriven, double FuelConsumed, double CargoWeight) {
+    super(make, model, year);
+    this.milesDriven = MilesDriven;
+    this.fuelConsumed = FuelConsumed;
+    this.cargoWeight = CargoWeight;
+  }
+
+  public double calculateFuelEfficiency() {
+        if (FuelConsumed == 0) {
+      return 0.0; 
+    }
+    return MilesDriven / (FuelConsumed + (CargoWeight * 0.5));
+  }
+}

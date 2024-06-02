@@ -1,0 +1,11 @@
+public class Main {
+  public static void main(String[] args) {
+    Car car1 = new Car("Ferrari", "F40", 1999, 890.0, 30.0);
+    double carEfficiency = car1.calculateFuelEfficiency();
+    System.out.println("Car Efficiency: " + carEfficiency + " miles per gallon");
+
+    Truck truck1 = new Truck("Ford", "F-150 Raptor", 2024, 400.0, 13.0, 3.0);
+    double truckEfficiency = truck1.calculateFuelEfficiency();
+    System.out.println("Truck Efficiency: " + truckEfficiency + " miles per gallon");
+  }
+}
